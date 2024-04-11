@@ -45,6 +45,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 10px;
 }
 footer a {
 	margin: 0 10px;
