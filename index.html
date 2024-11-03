@@ -3,30 +3,90 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="timefactory.css" />
 		<link rel="icon" href="favicon.svg" type="image/x-icon" />
 		<title>timefactory</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				scrollbar-width: none;
+				-ms-overflow-style: none;
+				user-select: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+			}
+			*::-webkit-scrollbar {
+				display: none;
+			}
+			html,
+			body {
+				color: white;
+				background-color: black;
+				overflow: hidden;
+				height: 100vh;
+				width: 100vw;
+				font: 16px/1.5 'Roboto', sans-serif;
+			}
+			.zero {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				flex: 1;
+				box-sizing: border-box;
+				border: medium solid blue;
+				border-radius: 0.5em;
+			}
+			.timefactory {
+				text-align: center;
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+			}
+			.one {
+				font-size: 50px;
+				text-align: center;
+			}
+			footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-bottom: 10px;
+			}
+			footer a {
+				margin: 0 10px;
+				color: #000000;
+				text-decoration: none;
+			}
+		</style>
 	</head>
-
 	<body>
-		<div class="container">
-			<div class="logo">
+		<div class="zero">
+			<div class="timefactory">
 				<img src="timefactory.svg" alt="frame" width="70%" />
-				<p class="purpose">the perpetual motion machine</p>
-				<p class="launch">Launching as soon as humanly possible</p>
+				<p class="one">the perpetual motion machine</p>
 			</div>
 		</div>
-
 		<footer>
 			<a href="https://github.com/timefactoryio" target="_blank">
 				<img
 					src="github-mark-white.svg"
-					alt="github"
+					alt="GitHub"
 					width="33"
 					height="33" />
 			</a>
 			<a href="https://twitter.com/timefactoryio" target="_blank">
-				<img src="x.svg" alt="x" width="33" height="33" />
+				<img src="x.svg" alt="Twitter" width="33" height="33" />
 			</a>
 		</footer>
 	</body>
